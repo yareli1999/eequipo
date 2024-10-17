@@ -1,0 +1,102 @@
+import turtle
+
+# Configura la pantalla
+screen = turtle.Screen()
+screen.bgcolor("lightblue")  # Fondo de color azul claro
+screen.title("Diseño de Tortuga")
+
+# Crea la tortuga
+pen = turtle.Turtle()
+pen.speed(0)  # Velocidad rápida
+pen.hideturtle()  # Oculta la flecha de la tortuga
+
+# Define colores para el diseño
+colors = ["red", "orange", "yellow", "green", "blue", "purple"]
+ 
+# Define la función para dibujar un círculo
+def draw_circle(color, size):
+    pen.color(color)
+    pen.begin_fill()
+    pen.circle(size)
+    pen.end_fill()
+
+# Dibuja círculos concéntricos
+size = 20
+for i in range(6):
+    draw_circle(colors[i], size)
+    size += 20
+
+# Dibuja una línea horizontal
+pen.penup()
+pen.goto(-150, 0)
+pen.pendown()
+pen.color("black")
+pen.forward(300)
+
+# Dibuja líneas verticales
+pen.penup()
+pen.goto(0, -150)
+pen.pendown()
+pen.color("black")
+pen.right(90)
+pen.forward(300)
+
+pen.penup()
+pen.goto(0, 150)
+pen.pendown()
+pen.color("black")
+pen.forward(300)
+
+# Mantén la ventana abierta hasta que se cierre
+turtle.done()
+
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 2em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

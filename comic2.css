@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.comic-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.comic-panel {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+}
+
+.comic-panel img {
+  max-width: 100%;
+  height: auto;
+}
+
+.comic-panel h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.comic-panel p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .comic-container {
+    grid-template-columns: 1fr; /* One column */
+  }
+}
+.comic-panel {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center; /* This line centers the content within the panel */
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.comic-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.comic-panel {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center; /* Centers content within the panel */
+}
+
+.comic-panel img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+.comic-panel h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.comic-panel p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .comic-container {
+    grid-template-columns: 1fr; /* One column */
+  }
+}

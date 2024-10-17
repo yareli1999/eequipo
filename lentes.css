@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo gris claro */
+    color: #333; /* Texto gris oscuro */
+    line-height: 1.6; /* Espacio entre líneas */
+}
+
+header {
+    background-color: #333; /* Fondo gris oscuro */
+    color: white; /* Texto blanco */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em; /* Tamaño del título */
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #333; /* Título gris oscuro */
+    font-size: 1.8em; /* Tamaño del título */
+    margin-top: 0;
+}
+
+ul {
+    list-style: disc; /* Estilo de lista */
+    margin-left: 20px; /* Margen izquierdo */
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff; /* Enlaces azules */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333; /* Fondo gris oscuro */
+    color: white; /* Texto blanco */
+    padding: 10px 0;
+    text-align: center;
+    position: fixed; /* Fijar al pie de página */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos adicionales */
+.intro p {
+    font-size: 1.2em;
+}
+
+.eleccion ul {
+    list-style: none; /* Eliminar viñetas */
+    padding: 0;
+}
+
+.eleccion ul li {
+    margin-bottom: 5px;
+}
+
+.eleccion ul li:before {
+    content: "• "; /* Agregar un punto como viñeta */
+    color: #007bff; /* Punto azul */
+    margin-right: 5px;
+}
+
+.cuidado ul {
+    list-style: none; /* Eliminar viñetas */
+    padding: 0;
+}
+
+.cuidado ul li {
+    margin-bottom: 5px;
+}
+
+.cuidado ul li:before {
+    content: "• "; /* Agregar un punto como viñeta */
+    color: #007bff; /* Punto azul */
+    margin-right: 5px;
+}

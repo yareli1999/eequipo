@@ -1,0 +1,95 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  background-image: url("portada4.jpg"); /* Reemplaza "portada4.jpg" con la ruta correcta */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: #333; /* Color de texto oscuro */
+}
+
+header {
+  background-color: #f08080; /* Color de fondo del encabezado */
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4em;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5em;
+  color: #ff6347; /* Color de los títulos */
+  margin-top: 30px;
+}
+
+p, ul {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* Estilos para la sección de imágenes */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-container img {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.image-container img:nth-child(1) {
+  filter: blur(3px);
+}
+
+.image-container img:nth-child(2) {
+  filter: grayscale(100%);
+}
+
+.image-container img:nth-child(3) {
+  filter: sepia(100%);
+}
+
+/* Estilos para el enlace */
+a {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #ff6347; /* Color de fondo del enlace */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #f08080; /* Color del enlace al pasar el mouse */
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #f08080; /* Color de fondo del pie de página */
+  padding: 10px 0;
+  text-align: center;
+  position: fixed; /* Fija el pie de página en la parte inferior */
+  bottom: 0;
+  width: 100%;
+}

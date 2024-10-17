@@ -1,0 +1,35 @@
+.comic-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px; /* Espacio alrededor de las imágenes */
+}
+
+.comic-container img {
+  width: 250px; /* Ancho de las imágenes */
+  height: auto;
+  margin: 10px;
+  border: 2px solid #ccc; /* Borde gris claro */
+  border-radius: 10px; /* Bordes ligeramente redondeados */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: transform 0.3s ease; /* Transición para el efecto hover */
+}
+
+.comic-container img:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el ratón */
+}
+
+.comic-container img:hover + .comic-title { /* Estilo para el título al pasar el ratón */
+  opacity: 1; /* Hace visible el título */
+}
+
+.comic-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  opacity: 0; /* Oculta el título inicialmente */
+  transition: opacity 0.3s ease; /* Transición para el efecto hover */
+  margin-top: 5px; /* Espacio entre la imagen y el título */
+}
